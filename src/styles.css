@@ -5,7 +5,7 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 div {
@@ -13,9 +13,15 @@ div {
   margin: 20px;
 }
 
+div ul {
+  width: 100%;
+}
+
 div li {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;;
 }
 
 div li + li {
@@ -26,14 +32,28 @@ button {
   background: #7159c1;
   color: #fff;
   border: 0;
-  padding: 10px 15px;
+  padding: 15px;
   cursor: pointer;
-  margin-top: 15px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
+  width: 100%;
 }
 
 div li button {
-  margin: 0 15px;
+  width: 30%;
+  height: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
   background: #ca4949;
+}
+
+.container {
+  max-width: 500px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
